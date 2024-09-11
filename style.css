@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+  --Font-size: 14px;
+  --Weight: 400, 600, 700;
+}
+
+body {
+  background-color: var(--Grey-900);
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.main-container {
+  width: 30%;
+  background-color: var(--Grey-800);
+  margin: 10% auto;
+  /* padding: 50px 0; */
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+.jessica-image {
+  border-radius: 50%;
+  margin: 45px 0 20px 0;
+}
+
+.profile-info h1 {
+  margin: 10px;
+  font-weight: 700;
+}
+
+.profile-info h2 {
+  color: var(--Green);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.-social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-wrap: wrap;
+  gap: 20px;
+}
+
+.-social-links a {
+  width: auto;
+}
+
+.-links {
+  background-color: var(--Grey-700);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--White);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 0 50px 0 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.-instagram {
+  margin-bottom: 30px;
+}
+
+.-links:active {
+  background-color: var(--Green);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Default styles for mobile devices (375px) */
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    width: 90%;
+  }
+}
